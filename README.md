@@ -11,4 +11,4 @@ Make sure following libraries are installed in your computer:
 
 Accuracy of Default model (K=3) : 97%
 
-To check accuracy of model with different K values you can replace 'model training' section in main.py with acc_check code.
+To check accuracy of model with different K values you can replace 'model training' section in main.py with acc_check text file.
