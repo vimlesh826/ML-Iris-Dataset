@@ -1,0 +1,15 @@
+#model training
+acc = []
+find_n = list(range(1,15)) #modify this list for k values
+def knn(n):
+    model = KNeighborsClassifier(n_neighbors = n)
+    model.fit(train_X,train_y)
+    model_t = model.predict(val_X)
+    acc.append(accuracy_score(val_y, model_t))
+for i in find_n:
+    knn(i)
+#for visualisation of accuracy of k
+ def plotting():
+    sb.lineplot(x = find_n, y = acc)
+    plot_d.show()
+plotting()
