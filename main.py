@@ -8,7 +8,7 @@ import seaborn as sb
 
 #Dataset read and store into dataframe
 
-iris_loc = "/Dataset/iris.csv"
+iris_loc = "Dataset/iris.csv"
 iris_data = panda.read_csv(iris_loc)
 
 
@@ -38,6 +38,5 @@ for i in find_n:
     knn(i)
 """
 print("successfull execution")
-plotting()
 
 
